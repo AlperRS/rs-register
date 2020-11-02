@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
   const embed = new RichEmbed()
     .setTitle(`<a:yep:772664219287289869> Kullanıcı Başarı İle Kayıt Edildi`)
     .setDescription(
-    `**❯Kayıt Olan Kullanıcı**\n ${rs}
+      `**❯Kayıt Olan Kullanıcı**\n ${rs}
 
     **❯Kullanıcı'nın İsmi**\n •${name} 
 
@@ -46,7 +46,8 @@ exports.run = (client, message, args) => {
 
     **❯Kullanıcı'nın Cinsiyeti**\n •${gender}
 
-    **❯Kayıt Eden Yetkili**\n •${message.author}`)
+    **❯Kayıt Eden Yetkili**\n •${message.author}`
+    )
     .setColor("RANDOM")
     .setFooter(`Developer By RS`)
     .setTimestamp();
